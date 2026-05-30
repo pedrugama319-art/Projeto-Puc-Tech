@@ -9,7 +9,7 @@ int FVictory (char m[3][3]) //essa funcao so sera chamada a partir da quinta jog
 
     for(i = 0; i < 3; i++)  //testa as vitorias na horizontal
     {
-        if(m[i][0] == m[i][1] && m[i][1] == m[i][2])
+        if(m[i][0] == m[i][1] && m[i][1] == m[i][2] && m[i][0] != ' ')
         {
             if(m[i][0] == 'X')
             {
@@ -23,7 +23,7 @@ int FVictory (char m[3][3]) //essa funcao so sera chamada a partir da quinta jog
     }
     for(j = 0; j < 3; j++)  //testa as vitorias na vertical
     {
-        if(m[0][j] == m[1][j] && m[1][j] == m[2][j])
+        if(m[0][j] == m[1][j] && m[1][j] == m[2][j] && m[0][j] != ' ')
         {
             if(m[0][j] == 'X')
             {
@@ -35,7 +35,7 @@ int FVictory (char m[3][3]) //essa funcao so sera chamada a partir da quinta jog
             }
         }
     }
-    if(m[0][0] == m[1][1] && m[1][1] == m[2][2])    //testa a primeira diagonal
+    if(m[0][0] == m[1][1] && m[1][1] == m[2][2] && m[0][0] != ' ')    //testa a primeira diagonal
     {
         if(m[0][0] == 'X')
         {
@@ -46,7 +46,7 @@ int FVictory (char m[3][3]) //essa funcao so sera chamada a partir da quinta jog
             return 2;
         }
     }
-    if(m[0][2] == m[1][1] && m[1][1] == m[2][0])    //testa a segunda diagonal
+    if(m[0][2] == m[1][1] && m[1][1] == m[2][0] && m[0][2] != ' ')    //testa a segunda diagonal
     {
         if(m[0][2] == 'X')
         {
