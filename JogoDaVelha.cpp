@@ -35,7 +35,7 @@ int FVictory (char m[3][3]) //essa funcao so sera chamada a partir da quinta jog
             }
         }
     }
-    if(m[0][0] == m[1][1] && m[1][1] == m[2][2])    //testa a primeira vertical 
+    if(m[0][0] == m[1][1] && m[1][1] == m[2][2])    //testa a primeira diagonal
     {
         if(m[0][0] == 'X')
         {
@@ -46,7 +46,7 @@ int FVictory (char m[3][3]) //essa funcao so sera chamada a partir da quinta jog
             return 2;
         }
     }
-    if(m[0][2] == m[1][1] && m[1][1] == m[2][0])    //testa a segunda vertical 
+    if(m[0][2] == m[1][1] && m[1][1] == m[2][0])    //testa a segunda diagonal
     {
         if(m[0][2] == 'X')
         {
